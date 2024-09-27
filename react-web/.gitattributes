@@ -1,0 +1,5 @@
+# Handle line endings for text files
+*.json text eol=lf
+*.md text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
