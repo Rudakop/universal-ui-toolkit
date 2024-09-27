@@ -42,7 +42,7 @@ The Universal UI Toolkit is aimed at providing a consistent and accessible user 
 2. **Install Dependencies for React**
 `cd react-web`
 `npm install`
-# or
+ or
 `yarn install`
 
 3. **Install Dependencies for Flutter Desktop Application:**
@@ -56,7 +56,7 @@ The Universal UI Toolkit is aimed at providing a consistent and accessible user 
 
 ## Start the development server:
 `npm start`
-# or
+ or
 `yarn start`
 Open your browser and go to http://localhost:3000 to view the app.
 
@@ -75,27 +75,34 @@ Open your browser and go to http://localhost:3000 to view the app.
 
 ### Project Structure
 
+1. **Root Directory (`universal-ui-toolkit/`):**
+   - Contains general project files like the main `README.md` and `.gitignore` files.
 
-universal-ui-toolkit/
-│
-├── react-web/                 # React Web Application
-│   ├── public/                # Static assets
-│   ├── src/                   # Source code
-│   │   ├── components/        # Reusable UI components
-│   │   ├── hooks/             # Custom hooks
-│   │   ├── styles/            # Theming and global styles
-│   │   └── utils/             # Utility functions
-│   ├── package.json           # Project dependencies and scripts
-│   └── ...                    # Other React project files
-│
-├── flutter-desktop/           # Flutter Desktop Application
-│   ├── lib/                   # Source code
-│   │   ├── widgets/           # Reusable widgets
-│   ├── pubspec.yaml           # Project dependencies and configurations
-│   └── ...                    # Other Flutter project files
-│
-└── README.md                  # Project documentation
+2. **React Web Application (`react-web/`):**
+   - **public/**: Contains static assets like images, favicon, and the main `index.html`.
+   - **src/**: Contains the source code for the React application.
+     - **components/**: Reusable UI components.
+     - **hooks/**: Custom React hooks.
+     - **styles/**: Stylesheets or CSS-in-JS configurations.
+     - **utils/**: Utility functions.
+     - **App.tsx**: The main component of the React application.
+     - **index.tsx**: Entry point of the React app.
+   - **package.json**: NPM dependencies and scripts for the React application.
+   - **tsconfig.json**: TypeScript configuration.
+   - **README.md**: Documentation specific to the React project.
 
+3. **Flutter Desktop Application (`flutter-desktop/`):**
+   - **lib/**: Contains the main source code for the Flutter application.
+     - **widgets/**: Reusable Flutter widgets.
+     - **main.dart**: Entry point of the Flutter application.
+   - **pubspec.yaml**: Flutter configuration file for dependencies and assets.
+
+4. **General Files:**
+   - **.gitignore**: Specifies files and directories to ignore in the repository.
+   - **README.md**: Main documentation for the whole project.
+   - **LICENSE**: License information for the repository.
+
+### Markdown Tips for Project Structure
 ### Contributing
 Contributions are welcome! Please follow these steps to contribute to the project:
 
